@@ -1,13 +1,42 @@
-<div>
-    <section>
-        <h2> Weather Forecast </h2>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
 
-    <section>
-        <h2> Converter </h2>
-    </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <section>
-        <h2>To-Do-List</h2>
-    </section>
-</div>
+<body>
+    <div>
+        <header>First Dashboard</header>
+        <main class="dashboard-container">
+
+            <section class="widget" id="weather-widget">
+                <h2> Weather Forecast </h2>
+            </section>
+            <section class="widget" id="converter-widget">
+                <h2> Converter </h2>
+            </section>
+
+            <section class="widget" id="todo-widget">
+                <h2>To-Do-List</h2>
+
+                <div class="todo-header">
+                    <input type="text" id="todo-input" placeholder="Add a new to-do item...">
+                    <button id="add-btn">Add</button>
+                </div>
+
+                <ul id="todo-list">
+
+                </ul>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
